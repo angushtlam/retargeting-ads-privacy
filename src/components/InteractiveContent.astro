@@ -1,0 +1,34 @@
+---
+// This component runs client-side scripts after the page hydrates
+---
+
+<script>
+  import { applyRandomAsset } from '../scripts/randomAsset';
+  import { initAutoScroll } from '../scripts/autoScroll';
+
+  // Check if demo mode is enabled
+  const isDemoMode = new URLSearchParams(window.location.search).has('demo');
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    applyRandomAsset();
+    if (isDemoMode) {
+      initAutoScroll();
+    }
+  });
+
+  // Also run immediately if DOM is already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      applyRandomAsset();
+      if (isDemoMode) {
+        initAutoScroll();
+      }
+    });
+  } else {
+    applyRandomAsset();
+    if (isDemoMode) {
+      initAutoScroll();
+    }
+  }
+</script>

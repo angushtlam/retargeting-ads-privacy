@@ -1,0 +1,33 @@
+---
+import '../styles/normalize.css';
+import '../styles/animate.css';
+import '../styles/index.css';
+import '../styles/sections.css';
+import '../styles/sections_content.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'The Ads Are Following Me! - A visual story about online advertising' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400|Roboto+Condensed:700i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+      <slot />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  background: #000;
+}
+
+.overlay {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 100%;
+  z-index: 100;
+}
+
+section {
+  background-size: cover !important;
+  height: 50rem;
+  position: relative;
+  width: 100%;
+}
+
+section:first-child {
+  height: 100vh;
+}
+
+section:last-child {
+  height: 100vh;
+}
+
+section .bottom {
+  bottom: 0;
+}
+
+section .top {
+  top: 0;
+}
+
+section .foreground {
+  background-size: cover !important;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+section .bottom,
+section .top {
+  align-items: center;
+  display: flex;
+  height: 33.33%;
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+}
+
+section .bottom .content,
+section .top .content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content.label {
+  background: #fff;
+  padding: 0 0.5rem;
+  max-width: 80%;
+}
+
+.background {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.background .content {
+  text-align: center;
+  width: 100%;
+}
+
+.background .content .top {
+  margin-bottom: 200px;
+}
+
+@media (min-width: 30rem) {
+  .mobile_only {
+    display: none;
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  .content.label {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  body {
+    font-size: 2rem;
+  }
+
+  .content.label {
+    border-bottom: 1rem solid #333;
+    border-right: 1rem solid #aaa;
+    max-width: 80rem;
+    padding: 0 1.5rem;
+  }
+  
+  section {
+    height: 105vh;
+  }
+}
+
+@media (min-width: 80rem) {
+  .content.label {
+    padding: 0 2.5rem;
+    max-width: 100rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+}

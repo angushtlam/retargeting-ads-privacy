@@ -1,0 +1,30 @@
+{
+  "name": "ads-privacy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angushtlam/ads-privacy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/angushtlam/ads-privacy/issues"
+  },
+  "homepage": "https://github.com/angushtlam/ads-privacy#readme",
+  "dependencies": {
+    "astro": "^6.4.5"
+  }
+}

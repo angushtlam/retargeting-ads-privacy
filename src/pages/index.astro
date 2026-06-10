@@ -1,0 +1,207 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Section from '../components/Section.astro';
+import InteractiveContent from '../components/InteractiveContent.astro';
+
+// Note: In static generation, we can't use Astro.url.searchParams for routing
+// Instead, we'll handle the demo parameter entirely on the client side
+---
+
+<MainLayout>
+  <Section id="landing">
+    <div class="background">
+      <div class="content">
+        <img
+          class="asset__item animated jackInTheBox"
+          id="fixed_item"
+          src="/images/candy.svg"
+        />
+      </div>
+    </div>
+    <div class="foreground"></div>
+    <div class="top">
+      <div class="content">
+        <h1 class="animated pulse infinite">The Ads Are Following Me<span data-demo-hide>!</span></h1>
+        <span class="mobile_only"
+          >For a better experience, view on a bigger display.</span
+        >
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content label">
+        <p data-full-only style="display: none;"><em>Scroll to continue…</em></p>
+        <p data-demo-only style="display: none;">How Advertisers Find You Again Online</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="visit">
+    <div class="foreground"></div>
+    <div class="bottom">
+      <div class="content label">
+        <p>
+          Sometimes products seem to follow you online, even through
+          websites with no relevance to each other.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="retargeting">
+    <div class="foreground"></div>
+    <div class="top">
+      <div class="content label">
+        <p data-full-only style="display: none;">Advertisers call this technique "retargeting"</p>
+        <p data-demo-only style="display: none;">Advertisers call this technique <a href="https://en.wikipedia.org/wiki/Behavioral_retargeting" target="_blank">behavioral retargeting</a>.</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content label">
+        <p data-full-only style="display: none;">They pay websites to display items in hopes you'll purchase it.</p>
+        <p data-demo-only style="display: none;">When you browse for a product, the same product will show up as advertisement, directly personalized for you in hopes you'll purchase it.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="cookies">
+    <div class="foreground"></div>
+    <div class="top">
+      <div class="content label">
+        <p data-full-only style="display: none;">However... Social media platforms and search engines have sophisticated methods to show you <em>your</em> ads.</p>
+        <p data-demo-only style="display: none;">Basic form of retargeting involves saving data in an <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">HTTP cookie</a> in your web browser. You will be uniquely identified by data stored in your browser's cookie.</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content label">
+        <p data-full-only style="display: none;">They work together and share data to better identify you.</p>
+        <p data-demo-only style="display: none;">However... Social media platforms have sophisticated methods to show you <em>your</em> ads. Sometimes platforms and advertisers work together and share data to better identify you.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="everywhere">
+    <div class="foreground"></div>
+    <div class="top">
+      <div class="content label">
+        <p>
+          As a result, it might seem like the advertised products are
+          following you everywhere online.
+        </p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content label">
+        <p data-full-only style="display: none;">Well, it's true, and its a deliberate attempt in trying to get you to spend your money or influence your actions.</p>
+        <p data-demo-only style="display: none;">Well, it's true, and its a deliberate attempt in trying to get you to spend your money.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="conclusion">
+    <div class="foreground"></div>
+    <div class="top">
+      <div class="content label">
+        <h2>What can I do?</h2>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content label">
+        <div data-full-only style="display: none;">
+          <p>
+            Countries are increasingly requiring companies to be more
+            transparent with how companies can use your data. Consumers can
+            also demand more privacy controls from the services they use.
+            Learn more about privacy developments from these privacy advocates
+            and associations:
+          </p>
+          <ul style="text-align: left">
+            <li>
+              <a href="https://www.eff.org/issues/privacy" target="_blank"
+                >Electronic Frontier Foundation (EFF)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.privacyinternational.org/learn"
+                target="_blank"
+                >Privacy International</a
+              >
+            </li>
+            <li>
+              <a href="https://iapp.org/resources/" target="_blank"
+                >International Association of Privacy Professional (IAPP)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div data-demo-only style="display: none;">
+          <div class="opinion_label">Pick One:</div>
+          <div class="opinion_buttons">
+            <a class="privacy" href="data.html"
+              >I value my privacy! Give me my data back!</a
+            >
+            <a class="accept" href="accept.html"
+              >I'm fine with behavioural advertising</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <div>
+    <div
+      style="
+        background: white;
+        position: absolute;
+        z-index: 1000;
+        font-size: 11px;
+        padding: 0 20px;
+        width: 100vw;
+      "
+    >
+      <p>
+        Created by
+        <a href="https://anguslam.com" target="_blank">Angus Lam</a>
+        ©️2018-2024. Icons made by
+        <a
+          href="https://www.flaticon.com/authors/smashicons"
+          target="_blank"
+          title="Smashicons">Smashicons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          target="_blank"
+          title="Creative Commons BY 3.0">CC 3.0 BY</a
+        >
+      </p>
+    </div>
+  </div>
+
+  <InteractiveContent />
+  <script>
+    // Handle demo mode from query parameter
+    function initDemoMode() {
+      const params = new URLSearchParams(window.location.search);
+      const isDemo = params.has('demo');
+      
+      // Toggle visibility of demo vs full content
+      document.querySelectorAll('[data-demo-only]').forEach(el => {
+        el.style.display = isDemo ? '' : 'none';
+      });
+      document.querySelectorAll('[data-full-only]').forEach(el => {
+        el.style.display = isDemo ? 'none' : '';
+      });
+    }
+    
+    // Run on load and when search params change
+    window.addEventListener('load', initDemoMode);
+    window.addEventListener('popstate', initDemoMode);
+    initDemoMode();
+  </script>
+</MainLayout>
