@@ -5,6 +5,9 @@ build:
 functions:
   directory: netlify/functions
 
+environment:
+  NODE_VERSION: 22
+
 redirects:
   - from: /*
     to: /index.html
