@@ -57,11 +57,7 @@ h1 {
   background: linear-gradient(90deg, rgb(13, 143, 160), rgb(25, 60, 156));
 }
 
-.opinion_buttons a.middle {
-  background: linear-gradient(90deg, rgb(175, 49, 206), rgb(189, 21, 91));
-}
-
-.opinion_buttons a.services {
+.opinion_buttons a.accept {
   background: linear-gradient(90deg, rgb(104, 49, 206), rgb(46, 21, 189));
 }
 
