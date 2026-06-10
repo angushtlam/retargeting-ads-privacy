@@ -1,5 +1,5 @@
 {
-  "name": "ads-privacy",
+  "name": "retargeting-ads-privacy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,16 +14,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angushtlam/ads-privacy.git"
+    "url": "git+https://github.com/angushtlam/retargeting-ads-privacy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/angushtlam/ads-privacy/issues"
+    "url": "https://github.com/angushtlam/retargeting-ads-privacy/issues"
   },
-  "homepage": "https://github.com/angushtlam/ads-privacy#readme",
+  "homepage": "https://github.com/angushtlam/retargeting-ads-privacy#readme",
   "dependencies": {
     "astro": "^6.4.5"
   }
